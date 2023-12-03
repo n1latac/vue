@@ -11,6 +11,7 @@
       <button @click="increaseCount">+</button>
     </div>
     <UserCard/>
+    <UserSearch/>
     <Pagination/>
   </div>
 </template>
@@ -18,11 +19,13 @@
 <script>
 import Pagination from "@/components/Pagination.vue";
 import UserCard from "@/components/UserCard.vue";
+import UserSearch from "@/components/UserSearch.vue";
   export default {
     name: 'MyComponent',
     components:{
       Pagination,
-      UserCard
+      UserCard,
+      UserSearch
     },
     data() {
       return {
